@@ -10,6 +10,10 @@ app.get("/about",(req,res)=>{
     res.send("About Page")
 })
 
+app.get("/something",(req,res)=>{
+    res.send("Something Page")
+})
+
 app.listen(process.env.PORT,()=>{
     console.log(`listening on PORT ${process.env.PORT}`)
 })
